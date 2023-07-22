@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:layout_marginTop="100dp"
+    tools:context="com.example.fragma.ui.slideshow.DistanceCoverActivity">
+    >
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0.0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDistance"
+        android:text="Steps: 0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtAvgSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSteps"
+        android:text="Average Speed: 0.0"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnStartWalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAvgSpeed"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="100dp"
+        android:text="Start Walk"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#FF5722" />
+
+    <Button
+        android:id="@+id/btnStartRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartWalk"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="110dp"
+        android:text="Start Run"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartRun"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="125dp"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#2196F3" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="125dp"
+        android:text="Stop"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#FF9800" />
+
+
+    <Button
+        android:id="@+id/btnRequestLocationPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStop"
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#FF5722"
+        android:text="Request Location Permission" />
+
+</RelativeLayout>
